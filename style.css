@@ -313,7 +313,7 @@ h5 {
   display: grid;
   grid-template-columns: 375px;
   grid-template-rows: 1fr;
-  background-color: rgba(0, 42, 39, 255) #e5e5e5;
+  background-color: rgba(0, 42, 39, 255);
   justify-content: center;
 }
 
