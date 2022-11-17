@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <title>Portfolio Project</title>
+  </head>
+  <body>
+    <main>
+      <div class="centered-headline">
+        <header>
+          <a class="logo" href="#"
+            ><img src="images\MyLogo.png" alt="Main Logo"
+          /></a>
+          <div class="menu-desktop">
+            <ul class="desktop-links">
+              <li class="menu-links"><a href="#worksNew">Portfolio</a></li>
+              <li class="menu-links"><a href="#about">About</a></li>
+              <li class="menu-links"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="pop">
+            <ul class="desktop-links">
+              <li class="menu-links"><a href="#worksNew">Portfolio</a></li>
+              <li class="menu-links"><a href="#about">About</a></li>
+              <li class="menu-links"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <nav class="menu-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </nav>
+        </header>
+        <section class="headline">
+          <div class="headline-intro">
+            <h1>
+              I’m Sebastian <br />
+              Glad to see you!
+            </h1>
+            <p>
+              I’m a software developer! I can help you build a product , feature
+              or website. Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don’t
+              hesitate to contact me.
+            </p>
+          </div>
+          <h3>LET’S CONNECT</h3>
+          <div class="icons">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/"
+                  ><img src="images\free_icon_5.svg" alt="Linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/sebalp100"
+                  ><img src="images\free_icon_4.svg" alt="GitHub"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <section id="worksNew" class="worksNew"></section>
+
+      <div class="centered">
+        <section id="about" class="about">
+          <div class="container">
+            <h2>About<br />Myself</h2>
+            <p>
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience! If
+              you like what you see and have a project you need coded, don’t
+              hesitate to contact me.
+            </p>
+            <h3>LET’S CONNECT</h3>
+            <div class="icons">
+              <ul>
+                <li>
+                  <a href="#"><img src="images\Cat.svg" alt="GitHub" /></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/"
+                    ><img src="images\Linkedin.svg" alt="Linkedin"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <button class="resume-button">Get my resume</button>
+          </div>
+          <ul class="about-dropdown">
+            <li class="dropdown-text-no-border">
+              Languages
+              <img
+                class="down-arrow"
+                src="images\down arrow.png"
+                alt="Dropdown arrow"
+              />
+            </li>
+            <li class="language">
+              <img src="images\Frame 9.png" alt="JavaScript icon" />
+            </li>
+            <li class="language">
+              <img src="images\Frame 10.png" alt="HTML icon" />
+            </li>
+            <li class="language">
+              <img src="images\Frame 11.png" alt="CSS icon" />
+            </li>
+            <div class="language-desktop">
+              <li>
+                <img
+                  class="rotate"
+                  src="images\Frame 9js.svg"
+                  alt="JavaScript icon"
+                />
+              </li>
+              <li>
+                <img
+                  class="rotate"
+                  src="images\Frame 10html.svg"
+                  alt="HTML icon"
+                />
+              </li>
+              <li>
+                <img
+                  class="rotate"
+                  src="images\Frame 11css.svg"
+                  alt="CSS icon"
+                />
+              </li>
+            </div>
+            <li class="dropdown-text">
+              Frameworks<img
+                class="right-arrow"
+                src="images\right arrow.png"
+                alt="Dropdown arrow"
+              />
+            </li>
+            <li class="dropdown-text">
+              Skills<img
+                class="right-arrow"
+                src="images\right arrow.png"
+                alt="Dropdown arrow"
+              />
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <section class="bottom-form" id="contact">
+      <div class="bottom-page">
+        <h2>Contact me</h2>
+        <p class="bottom-p">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <form
+          id="bottomForm"
+          action="https://formspree.io/f/mgeqkbez"
+          method="post"
+        >
+          <ul class="form-boxes">
+            <li>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Full Name"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="email"
+                id="email"
+                name="user_email"
+                placeholder="Email Adress"
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                id="msg"
+                name="user_message"
+                placeholder="Write your message here"
+                required
+                maxlength="500"
+              ></textarea>
+            </li>
+            <li>
+              <button class="form-button" type="submit">Get In Touch</button>
+            </li>
+          </ul>
+        </form>
+        <div id="errorm"></div>
+      </div>
+    </section>
+    <script src="script.js" defer></script>
+  </body>
+</html>
